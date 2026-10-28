@@ -10,6 +10,14 @@ Detects cars emitting visible exhaust smoke in video, reads their license plate,
 | **Built** | October – November 2024 |
 | **Area** | Computer vision |
 
+## Demo
+
+| Smoke detected + plate read | Smoke detected + plate read |
+|---|---|
+| ![Detection on a car with dark exhaust smoke, plate MMR-6525 read by OCR](docs/images/detection-1.jpg) | ![Detection on a car with white exhaust smoke, plate read by OCR](docs/images/detection-2.jpg) |
+
+Green box: the Roboflow model's `car-with-smoke` detection with confidence. Orange box: the license plate found by EasyOCR.
+
 ## How it works
 
 1. A custom **Roboflow** object-detection model (`car-with-smoke`, v2) runs on every video frame and draws boxes around smoking cars.
